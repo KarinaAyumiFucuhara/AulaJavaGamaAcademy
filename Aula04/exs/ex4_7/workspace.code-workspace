@@ -1,0 +1,21 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\..\\Aula03"
+		},
+		{
+			"path": "..\\..\\..\\Aula02"
+		},
+		{
+			"path": "..\\.."
+		}
+	],
+	"settings": {
+		"files.exclude": {
+			"**/.classpath": true,
+			"**/.project": true,
+			"**/.settings": true,
+			"**/.factorypath": true
+		}
+	}
+}
