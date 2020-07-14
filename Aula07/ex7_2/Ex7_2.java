@@ -13,6 +13,7 @@ public class Ex7_2 {
         frase = in.nextLine();
 
         char [] vetor = frase.toCharArray();
+        //Falta considerar a ultima palavra!!!
 
         
         for (char c : vetor) {
