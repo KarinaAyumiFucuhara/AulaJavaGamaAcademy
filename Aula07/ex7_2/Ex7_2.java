@@ -30,6 +30,8 @@ public class Ex7_2 {
             System.out.print(" ");
         }
 
+        in.close();
+
 
     }
     
