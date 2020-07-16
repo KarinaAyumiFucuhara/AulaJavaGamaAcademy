@@ -7,7 +7,7 @@ public class Fila {
 
     Queue<Pessoa> filanormal;
     Queue<Pessoa> filapriori;
-    int prox_atend =0;
+    int prox_atend = 0;
 
     public Fila() {
         this.filanormal = new LinkedList<>();
@@ -50,6 +50,10 @@ public class Fila {
         }
         
         return "Fila normal:\n" + pessoas_filanormal + "\nFila Prioritária:\n" + pessoas_filapriori;       
+    }
+
+    public Integer size() {
+        return filanormal.size() + filapriori.size(); 
     }
     
 }
