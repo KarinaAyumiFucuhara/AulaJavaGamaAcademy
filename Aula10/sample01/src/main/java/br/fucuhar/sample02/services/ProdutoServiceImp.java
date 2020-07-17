@@ -18,42 +18,11 @@ public class ProdutoServiceImp implements IProdutoService {
     public Produto buscarProdutoPorCod(int cod) {
         return repo.findById(cod).get();
     }
-
+    
     @Override
     public List<Produto> buscarTodos() {
-        return (List<Produto>) repo.findAll();
+        return (List<Produto>)repo.findAll();
     }
-
-    @Override
-    public void gravarProduto(Produto produto) {
-        repo.save(produto);
-
-    }
-
-    @Override
-    public Produto buscarPorNome(String nome) {
-        return repo.findByNome(nome);
-
-    }
-
-    @Override
-    public List<Produto> buscarBaratos(double valor) {
-        return repo.findMenoresPrecos(valor);
-    }
-
-    @Override
-    public void apagarProduto(int idProduto) {
-        repo.deleteById(idProduto);
-
-    }
-
-    
-
-    
-
-    
-
-    
 
     
 }
