@@ -1,5 +1,6 @@
 h1{
-    margin-bottom: 50px;
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 
 .botaoGerarRel{
@@ -10,4 +11,8 @@ h1{
 
 .col-4{
     padding: 5px;
+}
+
+.btn-primary{
+    margin-bottom: 20px;
 }

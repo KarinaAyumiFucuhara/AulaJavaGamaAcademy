@@ -4,6 +4,7 @@ function gerarRelEventos(event) {
     let dataInicio = document.getElementById("inicio").value;
     let dataFim = document.getElementById("fim").value;
 
+    //mudar para inicio e fim
     let msgLogin = {
         email: txtUser,
         racf: txtUser,
@@ -18,11 +19,17 @@ function gerarRelEventos(event) {
         }
     }
 
+    //alterar o BE
     fetch("http://localhost:8080/login", cabecalho)
         .then(res => tratarResposta(res));
 
 }
 
+/* function carregarDados() {
+    fetch("http://localhost:8080/usuarios")
+        .then(res => res.json())
+        .then(res => exibirDados(res));
+} */
 
 /* function exibirDados(res) {
     let tabelaTxt = "<table class = 'table table-sm'> <tr> <th>Nome</th> <th>Nome</th> <th>Racf</th> </tr>"
